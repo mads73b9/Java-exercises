@@ -1,0 +1,2 @@
+# Java-exercises
+JavaScript øvelser
