@@ -10,14 +10,18 @@
 
 <body>
     <script>
-        //Jeg erklærer variabler
-        let length = 3,
-            width = 5,
-            areal;
-        //Jeg udregner arealet
+        let length = 20;
+        let width = 20;
         areal = length * width;
-        //Jeg udskriver resultatet
         console.log("Længden er " + length + " meter og bredden er " + width + " meter. Arealet er " + areal + " kvadratmeter.")
+
+        if (areal < 100) {
+            console.log("Arealet er for lille!")
+        } else if (areal > 100 && areal < 200) {
+            console.log("Arealet er passende");
+        } else {
+            console.log("Arealet er ALT for stort!!");
+        }
     </script>
 </body>
 
