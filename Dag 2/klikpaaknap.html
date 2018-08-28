@@ -50,19 +50,21 @@
 
         function sletKlik() {
             box.textContent = "";
+            bax.textContent = "";
         }
 
         butHtml.addEventListener("click", skrivHtml);
 
         function skrivHtml() {
-            box.innerHTML = "<h1>Overskrift</h1><p>Tekst</p>"
+            box.innerHTML = "<h2>Overskrift</h2><p>Tekst</p>"
         }
 
         butFlyt.addEventListener("click", flytHtml);
 
         function flytHtml() {
+
             box.textContent = "";
-            bax.innerHTML = "<h1>Overskrift</h1><p>Tekst</p>"
+            bax.innerHTML = "<h2>Overskrift</h2><p>Tekst</p>"
         }
     </script>
 </body>
