@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A</title>
+    <style>
+        #box,
+        #bax {
+            width: 200px;
+            height: 200px;
+            background-color: wheat;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        button {
+            font-size: 2rem;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="butKlik">klik</button>
+    <button id="butSlet">slet</button>
+    <button id="butHtml">html</button>
+    <button id="butFlyt">flyt</button>
+    <div id="box"></div>
+    <div id="bax"></div>
+
+    <script>
+        const butKlik = document.querySelector("#butKlik");
+        const butSlet = document.querySelector("#butSlet");
+        const butHtml = document.querySelector("#butHtml");
+        const butFlyt = document.querySelector("#butFlyt");
+        const box = document.querySelector("#box");
+        const bax = document.querySelector("#bax");
+        //let innerHtml = document.querySelector("innerHtml");
+
+        butKlik.addEventListener("click", skrivKlik);
+
+        function skrivKlik() {
+            box.textContent = "KLIK";
+        }
+
+        butSlet.addEventListener("click", sletKlik);
+
+        function sletKlik() {
+            box.textContent = "";
+        }
+
+        butHtml.addEventListener("click", skrivHtml);
+
+        function skrivHtml() {
+            box.innerHTML = "<h1>Overskrift</h1><p>Tekst</p>"
+        }
+
+        butFlyt.addEventListener("click", flytHtml);
+
+        function flytHtml() {
+            box.textContent = "";
+            bax.innerHTML = "<h1>Overskrift</h1><p>Tekst</p>"
+        }
+    </script>
+</body>
+
+</html>

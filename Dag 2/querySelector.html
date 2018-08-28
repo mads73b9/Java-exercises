@@ -15,6 +15,13 @@
         const myBut = document.querySelector("#myBut");
         console.log(myBut);
 
+        myBut.addEventListener("click", doSomething);
+
+        function doSomething() {
+            myBut.textContent = "Tak fordi du klikkede";
+        }
+
+        //myBut.removeEventListener("click", doSomething);
     </script>
 
 </body>
