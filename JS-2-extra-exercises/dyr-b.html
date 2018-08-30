@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <div class="animal">
+
+    </div>
+
+    <script>
+        let pattedyr = {
+            "navn": "Karoline",
+            "type": "and",
+            "levested": "Frederiksberg"
+        };
+
+        let dyreinfo = "Min " + pattedyr.navn + " er en " + pattedyr.type + " som lever på " + pattedyr.levested + " (tror jeg nok)...";
+
+        console.log(dyreinfo);
+
+        document.querySelector(".animal").textContent = dyreinfo;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <div class="animal">
+        <strong class="navn"></strong>
+        <img src="" alt="">:<br>
+        <span> en </span>
+        <span class="type"></span>
+        <span>som lever i </span>
+        <span class="levested"></span>
+    </div>
+
+    <script>
+        let animal = {
+            "navn": "Karoline",
+            "type": "and",
+            "levested": "min navle",
+            "billede": "billeder/karo.jpg"
+        };
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            document.querySelector(".animal .navn").textContent = animal.navn;
+            document.querySelector(".animal .type").textContent = animal.type;
+            document.querySelector(".animal .levested").textContent = animal.levested;
+            document.querySelector(".animal img").src = animal.billede;
+        }
+        //let dyreinfo = "Min " + pattedyr.navn + " er en " + pattedyr.type + " som lever i " + pattedyr.levested + " (tror jeg nok)...";
+
+        //console.log(dyreinfo);
+    </script>
+</body>
+
+</html>
