@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <div class="animal">
+
+    </div>
+
+    <script>
+        let animal = [{
+                "navn": "Karoline",
+                "type": "en and",
+                "levested": "min navle",
+                "billede": "billeder/karo.jpg"
+            },
+            {
+                "navn": "Mikkel Low",
+                "type": "en bjørn",
+                "levested": "månen",
+                "billede": "billeder/mik02.jpg"
+            },
+            {
+                "navn": "Min Mikkelw",
+                "type": "en moskusokse",
+                "levested": "rundetårn",
+                "billede": "billeder/mik01.jpg"
+            },
+        ];
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        //let dest = document.querySelector(".animal");
+
+        function start() {
+            animal.forEach(person => {
+                document.querySelector(".animal").innerHTML +=
+                    "<img src='" + person.billede + "' alt=''> " + person.navn + ": " + person.type + " fra " + person.levested + "<br>";
+                //dest.innerHTML += person.billede + person.navn + " " + person.type + " " + person.levested + "."
+            })
+        }
+
+
+
+
+
+
+
+        /*function start() {
+            document.querySelector(".animal .navn").textContent = animal.navn;
+            document.querySelector(".animal .type").textContent = animal.type;
+            document.querySelector(".animal .levested").textContent = animal.levested;
+            document.querySelector(".animal img").src = animal.billede;
+        }*/
+        //let dyreinfo = "Min " + pattedyr.navn + " er en " + pattedyr.type + " som lever i " + pattedyr.levested + " (tror jeg nok)...";
+
+        //console.log(dyreinfo);
+    </script>
+</body>
+
+</html>
